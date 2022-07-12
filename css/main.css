@@ -109,11 +109,27 @@ body {
   background: rgb(32, 31, 31);
 }
 
+header, 
+.description,
+footer {
+    display: flex;
+    width: 100%;
+    color: #fff;
+}
+
+.description {
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
+  
 }
 
 .div-1, .div-2, .div-3 {
@@ -131,6 +147,12 @@ body {
 .div-1, .div-2 {
     border-right: 1px solid #555;
     padding-right: 30px;
+}
+
+
+footer {
+    border-top: 1px solid #fff;
+    margin-top: 20px;
 }
 
 
